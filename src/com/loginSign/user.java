@@ -28,6 +28,6 @@ public class user {
 	
 	public String getemail() {
 		return email;
-	}
+	}      
 
 }
