@@ -1,13 +1,13 @@
 package com.loginSign;
 
-public class user {
+public class User {
 	
 	private String username;
 	private String Password;
 	private String phonenumber;
 	private String email;
 	
-	public user(String username,String Password,String phonenumber,String email) {
+	public User(String username,String Password,String phonenumber,String email) {
 		
 		this.username=username;
 		this.Password=Password;
