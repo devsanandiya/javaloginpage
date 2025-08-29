@@ -9,15 +9,10 @@ public class Grumble {
 			SingUp signup=new SingUp(db);
 			Login login=new  Login(db);
 	
-			System.out.println("Login");
-			System.out.println("signup");
-			System.out.println("enter your choice");
-			int choice=sc.nextInt();
 			
 			
-			switch(choice) {
-			
-			case 1:
+			while(true) {
+				System.out.println("login page--");
 			System.out.println("enter ur username:");
 			String suName=sc.nextLine();
 			System.out.println("enter your password:");
@@ -25,16 +20,25 @@ public class Grumble {
 			
 			login.Login(suName, password);
 			
-			case 2:
-				System.out.println
-				
+		     System.out.println("signup page---");
+		     System.out.println("username:");
+		     String newusername=sc.nextLine();
+		     System.out.println("password:");
+		     String newpassword=sc.nextLine();
+		     System.out.println("phonenumber:");
+		     String newphonenum=sc.nextLine();
+		     System.out.println("email:");
+		     String newemailString=sc.nextLine();
 		     
+		     signup.SingUp(newusername, newemailString, newphonenum, newpassword);
+		     continue;
+			}
 			
 
 		    
 			} 
 	}
-}
+
 	
 
 

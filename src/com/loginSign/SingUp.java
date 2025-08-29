@@ -12,7 +12,6 @@ public class SingUp {
 	
 	public void SingUp (String username,String email,String phone,String password) {
 		User newUser=new User(username,password,phone,email);
-		System.out.println("signuppage");
 		db.adduser(newUser);
 	      
 	      
