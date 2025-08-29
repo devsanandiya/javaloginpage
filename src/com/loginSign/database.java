@@ -9,10 +9,11 @@ public class database {
      
 	public void  adduser(User user) {
          users.add(user);
-         System.out.println("user added sucessfully");
+         System.out.println("user added sucessfully"+user.getusername());
  	}
 	
 	public boolean validuser(String username ,String password) {
+		System.out.println("Check point");
 		for(User u :users) {
 			if(u.getusername().equals(username)&&u.getPassword().equals(password)) {
 				return true;

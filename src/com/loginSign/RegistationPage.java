@@ -19,18 +19,25 @@ public class RegistationPage {
 				System.out.println("Email Successfull");
 				if(phone.charAt(0)>6&&phone.charAt(0)<9) {
 					System.out.println("Success Number");{
-				}
+						if(confiPassword==password)
+						{
+								SingUp s=new SingUp(username,email,phone,password);
+						}					
+					}
+				
 			}
 		}
 	}
-public class SingUp {
+	}
+}
+class SingUp {
 		public SingUp() 
 			{
 				System.out.println("invalid inputted");
 			}
-			public SingUp (String username,String email,String phone,String password) {
+			public SingUp (String username,String email,String phone,String password) 
+			{
 				System.out.println("SuccessFully");
 			}
 		
-}
 }
